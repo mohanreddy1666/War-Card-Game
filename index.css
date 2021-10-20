@@ -1,7 +1,7 @@
-body, html {
+html, body {
     margin: 0;
     padding: 0;
-    background-image: url(assets/table.png);
+    background-image: url("assets/table.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Exo 2", sans-serif;
@@ -11,23 +11,40 @@ body, html {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    color: white;
 }
 
 button {
-    background-color: yellow;
+    background-color: #FFF100;
     cursor: pointer;
     border: none;
 }
 
-#new-deck{
+button#new-deck {
     align-self: flex-start;
-    margin-top: 5px;
     padding: 5px;
-    font-size: 1.2em;
 }
 
-#draw-card {
+button#draw-card {
     font-size: 1.2em;
     padding: 5px;
+    align-self: stretch;
+}
+
+div.card-slot {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 120px;
+    width: calc(120px * 5 / 7);
+}
+
+div.card-slot:nth-of-type(1) {
+    margin-bottom: 50px;
+}
+
+img.card {
+    height: 100%;
+    width: 100%;
 }
