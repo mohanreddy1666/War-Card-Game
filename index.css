@@ -1,3 +1,33 @@
 body, html {
     margin: 0;
+    padding: 0;
+    background-image: url(assets/table.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Exo 2", sans-serif;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    background-color: yellow;
+    cursor: pointer;
+    border: none;
+}
+
+#new-deck{
+    align-self: flex-start;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+}
+
+#draw-card {
+    font-size: 1.2em;
+    padding: 5px;
 }
